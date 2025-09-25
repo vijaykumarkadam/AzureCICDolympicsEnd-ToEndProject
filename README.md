@@ -1,1 +1,1 @@
-# AzureCICDolympicsEnd-ToEndProject
+# AzureolympicsEnd-ToEndProject
