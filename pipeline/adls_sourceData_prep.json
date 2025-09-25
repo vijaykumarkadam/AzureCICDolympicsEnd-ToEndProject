@@ -152,6 +152,54 @@
 						}
 					]
 				}
+			},
+			{
+				"name": "Set file names",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "ForEach1 file",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "v_file_name",
+					"value": {
+						"value": "@string(variables('v_file_array'))",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Set file count",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "ForEach1 file",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "v_file_no",
+					"value": {
+						"value": "@length(variables('v_file_array'))",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"variables": {
