@@ -1,0 +1,9 @@
+{
+	"name": "adf-olympics-pro",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8eaa929a-ccd9-45c6-a74f-5eb47e69b24c",
+		"tenantId": "99113bbf-867f-4c8a-8f2c-783d77e79a6e"
+	}
+}
