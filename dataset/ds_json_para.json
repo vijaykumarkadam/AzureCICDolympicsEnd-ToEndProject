@@ -1,0 +1,33 @@
+{
+	"name": "ds_json_para",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "param (1).json",
+				"folderPath": "raw_data",
+				"fileSystem": "source"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"p_rel_url": {
+					"type": "string"
+				},
+				"p_folder": {
+					"type": "string"
+				},
+				"p_file": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
